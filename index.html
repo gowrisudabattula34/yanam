@@ -23,25 +23,36 @@ header{
     text-align:center;
     font-size: xx-large;
 }
+nav.navbar{
+    background: aqua;
+    display: flex;
+    justify-content: space-between; /* ✅ FIX */
+    align-items: center;            /* vertical center */
+    padding: 10px 25px;
+}
 
-nav{
-    
-    background:#002244;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    padding:15px;
+nav .logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+    color: rgb(0, 0, 31);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover{
-    color:#00f2fe;
+    color: #003366;
 }
+
 
 .container{
     max-width:1000px;
@@ -86,19 +97,23 @@ img{
     </style>
 </head>
 <body>
+    <nav class="navbar">
+    <a href="place.html" class="logo">
+        <img src="https://images.entitysport.com/assets/uploads/2024/07/yr.png" alt="My profile logo">
+    </a>
 
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="place.html">Famous Places</a>
+        <a href="food.html">Famous Food</a>
+        <a href="special.html">Speciality</a>
+    </div>
+</nav>
 <header>
     <h1>Welcome to Yanam City</h1>
     <p>The French Heritage City of Puducherry</p>
     <img src="https://chaloghumane.com/wp-content/uploads/2021/08/Yanam.jpg" alt="Yanam City">
 </header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="place.html">Famous Places</a>
-    <a href="food.html">Famous Food</a>
-    <a href="special.html">Speciality</a>
-</nav>
 
 <div class="container">
     <h2>About Yanam</h2>
